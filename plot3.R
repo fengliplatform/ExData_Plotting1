@@ -18,7 +18,8 @@ powerdata$datetime <- strptime(paste(powerdata$Date,powerdata$Time,sep=" "),"%d/
 with(powerdata, plot(datetime, Sub_metering_1, type="l", xlab="", ylab="Energy sub metering", col="black"))
 with(powerdata, lines(datetime, Sub_metering_2, type="l", col="red"))
 with(powerdata, lines(datetime, Sub_metering_3, type="l", col="blue"))
-legend("topright", legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),col=c("black","red","blue"), lty=1)
+legend("topright", legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),
+       col=c("black","red","blue"), lty=1, pt.cex=1, cex=0.7)
 
 # generate plot3.png
 dev.copy(png, file="plot3.png", width=480, height=480)

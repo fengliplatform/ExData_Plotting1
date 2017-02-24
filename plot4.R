@@ -32,7 +32,8 @@ legend("topright",
        legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),
        col=c("black","red","blue"), 
        lty=1,
-       box.lwd=0)
+       box.lwd=0,
+       pt.cex=1, cex=0.2)
 
 # fourth
 with(powerdata, plot(datetime, Global_reactive_power, type="l", xlab="datetime", ylab="Global_reactive_power"))
